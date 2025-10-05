@@ -2,6 +2,15 @@ package main
 
 import "fmt"
 
+
+//declaring variable
+var python, java bool;
+
+var start, end int = 1,3;
+
+var pi float32 = 3.1;
+var piFull float64 = 3.14159;
+
 func add(x int, y int) int {
   return x+y;
 }
@@ -18,10 +27,23 @@ func addNsub(x,y int)(add,sub int){
 	return;
 }
 
+
+func variables(){
+	k:=3;
+	fmt.Println(k)
+	
+	fmt.Println(pi,piFull);
+}
+
+
+
 func main()  {
 	fmt.Println(add(1,2))
 	a,b:= swap("hellow","world");
 	fmt.Println(a,b);
 	fmt.Println(addNsub(2,2));
+	fmt.Println(python,java);
+	fmt.Println(start,end);
+	variables();
 }
 
