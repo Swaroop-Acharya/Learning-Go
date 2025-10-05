@@ -8,8 +8,16 @@ var python, java bool;
 
 var start, end int = 1,3;
 
-var pi float32 = 3.1;
-var piFull float64 = 3.14159;
+var (
+ num int = 1
+ pi float32 = 3.1
+piFull float64 = 3.14159
+	name string = "swaroop"
+	flag bool = true
+	ch rune = '😊'
+)
+
+
 
 func add(x int, y int) int {
   return x+y;
@@ -31,8 +39,9 @@ func addNsub(x,y int)(add,sub int){
 func variables(){
 	k:=3;
 	fmt.Println(k)
-	
 	fmt.Println(pi,piFull);
+	fmt.Println(ch);
+	fmt.Printf("%c\n",ch);
 }
 
 
