@@ -1,0 +1,8 @@
+1. Go lets us to create huge constant — so big you can’t even fit it into normal int types.
+But Go lets it exist as a constant safely because it’s not stored in memory yet — it’s only calculated when needed.
+
+
+2. Defer statement features
+3. expressions in if statement
+4. Switch statements
+
