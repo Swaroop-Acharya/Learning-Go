@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+func printSlice(s []int) {
+	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+}
+
 func main() {
 
 	//Declaring
@@ -65,4 +69,18 @@ func main() {
 
 	sa = sa[1:]
 	fmt.Println(s)
+
+	sl := []int{1, 2, 3, 4, 5}
+	printSlice(sl)
+	sl = sl[:0] //Slice to give it zero length
+	printSlice(sl)
+
+	sl = sl[:4] // Extend the length
+	printSlice(sl)
+
+	sl = sl[2:]
+	printSlice(sl)
+
+
+
 }
