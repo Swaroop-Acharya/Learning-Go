@@ -72,6 +72,7 @@ func main() {
 
 	sl := []int{1, 2, 3, 4, 5}
 	printSlice(sl)
+
 	sl = sl[:0] //Slice to give it zero length
 	printSlice(sl)
 
@@ -80,7 +81,5 @@ func main() {
 
 	sl = sl[2:]
 	printSlice(sl)
-
-
 
 }
