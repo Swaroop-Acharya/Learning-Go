@@ -6,5 +6,4 @@ But Go lets it exist as a constant safely because it’s not stored in memory ye
 4. Switch statements
 5. Slices in array, Slices are like references to arrays. Changing the vales
   of slice modifies tthe corresponding elements of its underlying array.
-
-
+6. The zero value of map is nil. A nil map has no keys, nor can keys be added.
