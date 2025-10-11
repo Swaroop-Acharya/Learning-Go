@@ -8,5 +8,5 @@ But Go lets it exist as a constant safely because it’s not stored in memory ye
   of slice modifies tthe corresponding elements of its underlying array.
 6. The zero value of map is nil. A nil map has no keys, nor can keys be added.
 7. Function closures
-
+8. Methods vs Functions
 
