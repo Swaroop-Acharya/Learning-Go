@@ -15,10 +15,18 @@ func (p Person) greet() {
 	fmt.Println(p.name)
 }
 
+
+func (p Person) changeName(name string){
+	p.name = name;
+}
+
+func (p *Person) changeNameV2(name string){
+	p.name = name;
+}
+
 func methodsOnStruct() {
 	p:= Person{"Swaroop",23};
 	p.greet();
-
 }
 
 
@@ -35,9 +43,24 @@ func methodsOnBasicType(){
 	fmt.Println(i2.double())
 }
 
+func pointerRecievers(){
+	p:=Person{"Kam",22}
+	p.changeName("Sam");
+	fmt.Println(p) // o/p Kam
+
+	(&p).changeNameV2("Sam")
+	fmt.Println(p) // o/p Sam
+
+	//or 
+
+	p.changeNameV2("Tam")
+	fmt.Println(p) // o/p Tam 
+}
+
 
 // Functions with a receiver == Method
 func main() {
 	methodsOnStruct();
 	methodsOnBasicType();
+	pointerRecievers();
 }
