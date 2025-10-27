@@ -91,6 +91,7 @@ func flowControl() {
 	fmt.Print("When is sunday?")
 	today := time.Now().Weekday()
 	fmt.Printf("type is : %T/n", today)
+	
 	switch time.Saturday {
 	case today + 0:
 		fmt.Println("Today is Saturday")
