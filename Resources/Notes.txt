@@ -9,4 +9,12 @@ But Go lets it exist as a constant safely because it’s not stored in memory ye
 6. The zero value of map is nil. A nil map has no keys, nor can keys be added.
 7. Function closures
 8. Methods vs Functions
+9. The fmt package has special logic.
+   When it sees an interface value being printed, it checks:
+  1. Does it implement the fmt.Stringer interface?
+    (which has String() string)
 
+  2. If not, does it implement the error interface?
+   (which has Error() string)
+
+  3. If yes → it calls the Error() method automatically to get the string to print. 
