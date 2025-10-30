@@ -45,7 +45,27 @@ func functionClosures() {
 	fmt.Println(counter())
 }
 
+func filter( n []int , fn func(n int) bool )[]int {
+	var res []int;
+	for _,v:= range n {
+		if fn(v) {
+			res = append(res, v)
+		}
+	}
+	return res;
+}
+
+
+func filterFunctions(){
+	n:= []int {1,2,3,4,5,6,7,8,9,10,11,12}
+	odd:= filter(n, func(n int) bool { return n % 2 == 0} )
+	even:= filter(n, func(n int) bool { return n % 2 == 1} )
+	fmt.Println(odd)
+	fmt.Println(even)
+}
+
 func main() {
 	functionValues()
 	functionClosures()
+	filterFunctions()
 }
