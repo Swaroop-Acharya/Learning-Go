@@ -1,5 +1,5 @@
 # Other resource
-
+https://www.alexedwards.net/blog/interfaces-explained
 
 # Cool things to build 
 - https://www.build-redis-from-scratch.dev/en/introduction
