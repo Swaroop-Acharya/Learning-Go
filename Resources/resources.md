@@ -1,5 +1,6 @@
 # Other resource
 https://www.alexedwards.net/blog/interfaces-explained
+https://www.alexedwards.net/blog/validation-snippets-for-go
 
 # Cool things to build 
 - https://www.build-redis-from-scratch.dev/en/introduction
