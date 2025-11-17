@@ -3,6 +3,7 @@
 - https://www.alexedwards.net/blog/validation-snippets-for-go
 - https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
 - TLS certificates for prod: https://letsencrypt.org/
+- HTTP/2.0 in Go: https://www.youtube.com/watch?v=FARQMJndUn0
 
 # Cool things to build 
 - https://www.build-redis-from-scratch.dev/en/introduction
