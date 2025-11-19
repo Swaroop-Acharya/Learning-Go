@@ -5,6 +5,7 @@
 - TLS certificates for prod: https://letsencrypt.org/
 - HTTP/2.0 in Go: https://www.youtube.com/watch?v=FARQMJndUn0
 - https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html#authentication-responses
+- CSRF Attack : https://www.gnucitizen.org/blog/csrf-demystified/
 
 # Cool things to build 
 - https://www.build-redis-from-scratch.dev/en/introduction
